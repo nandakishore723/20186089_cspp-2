@@ -8,10 +8,13 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		int base = scan.nextInt();
 		int height = scan.nextInt();
-		areaOfTriangle(base, height);
+		System.out.println(areaOfTriangle(base, height));
 	}
 	/*
 	Need to fill the areaOfTriangle function and print the output
 	of fahrenheit.
 	*/
-}
+	public static double areaOfTriangle(int base, int height){
+		return 0.5*base*height;
+	}
+} 
