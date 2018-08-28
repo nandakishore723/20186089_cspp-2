@@ -1,11 +1,5 @@
 import java.util.*;
 public class bigger_equal_smaller {
-
-	/**
-	 * { function_description }
-	 *
-	 * @param      args  The arguments
-	 */
 	public static void main(String[] args) {
 
 		int varA, varB;
