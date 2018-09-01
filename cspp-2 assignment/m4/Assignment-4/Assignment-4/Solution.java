@@ -14,10 +14,10 @@ public final class Solution {
          * It is a counstructor.
          */
     }
-     /*
+     /**
      * @param      s    string
      *
-     * @return     string
+     * @return string
      */
     public static String reverse(final String s) {
         /**
