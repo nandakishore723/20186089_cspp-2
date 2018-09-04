@@ -1,7 +1,7 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 public class List {
-    private static final int N_val = 10;
+    private static final int NAV = 10;
     //Implement all the methods mentioned to build a ListADT
 
     /*
@@ -62,7 +62,7 @@ public class List {
     private int size;
     public List() {
         size = 0;
-        a = new int[N_val];
+        a = new int[NAV];
         // what are the two variables to be initialized here?
         // think about the private variables described above.
         // What should be the default values?
