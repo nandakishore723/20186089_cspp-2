@@ -146,8 +146,11 @@ public class List {
      * number of items in the list? Would size variable be useful?
      */
     public int get(int index) {
-    
-        return a[index];
+        if (index < size) {
+        return a[index];        
+        } else {
+            return -1;
+        }
     }
 
     /*
