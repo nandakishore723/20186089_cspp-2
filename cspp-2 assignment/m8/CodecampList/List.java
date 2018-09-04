@@ -127,7 +127,7 @@ public class List {
     public void remove(int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
-        for (int i=index;i < size-1;i++) {
+        for (int i=index; i < size-1; i++) {
         	a[i]= a[i+1];        	
         }
         a[size-1] = 0;
