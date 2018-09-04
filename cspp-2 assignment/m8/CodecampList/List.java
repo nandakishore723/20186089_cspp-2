@@ -99,7 +99,7 @@ public class List {
         a[size++] = item;
     }
 
-    /*
+    /**
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
      * to the objects outside the list
@@ -210,7 +210,7 @@ public class List {
     }
 
     /**
-     * Returns the index of the first occurrence of the specified element in
+     * Returns the index of the first occurrence of the specified element in.
      * this list, or -1 if this list does not contain the element.
      *
      * @param      item  The item
