@@ -185,7 +185,7 @@ public class List {
     }
 
     /**
-     * Contains return true if the list has the item passed as an argument to
+     * Contains return true if the list has the item passed as an argument to.
      * the method So, iterate through the list and return true if the item
      * exists and otherwise false
      *
@@ -220,7 +220,7 @@ public class List {
     }
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */
