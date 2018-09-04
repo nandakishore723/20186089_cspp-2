@@ -37,8 +37,8 @@ public class List {
     // don't create the array yet using new
     // that's the job of the List constructor
 
-    /*
-     * What are the other class variables needed for creating a list?
+    /**
+     * What are the other class variables needed for creating a list?.
      * How about keeping track of the size of the list?
      * If you add 2 items to the list then the size should be 2.
      * Let's think about the size of the list by comparing it to the
@@ -61,8 +61,8 @@ public class List {
     // again, don't initialize it here
     // variable initialization should be done in the constructor
 
-    /*
-     * The purpose of the constructor is to initialize the
+    /**
+     * The purpose of the constructor is to initialize the.
      * class variables with some default values.
      */
     private int[] a;
@@ -112,7 +112,7 @@ public class List {
     }
 
     /**
-     * The remove method does what the name suggests. Removes an int item,
+     * The remove method does what the name suggests. Removes an int item,.
      * specified by the index argument, from the list It also does an additional
      * step. Think about what happens when an item is removed from the middle of
      * the list It creates a hole in the list, right? This would mean, all the
@@ -141,7 +141,7 @@ public class List {
     }
 
     /**
-     * Get method has to return the items that is at the index position passed
+     * Get method has to return the items that is at the index position passed.
      * as an argument to the method. If the item doesn't exist then return a -1
      * to indicate that there is no element at that index. How can an element
      * not be there at a given position? Well, if the position is greater than
@@ -161,8 +161,8 @@ public class List {
         }
     }
 
-    /*
-     * What happens when you print an object using println?
+    /**
+     * What happens when you print an object using println?.
      * Java provides a method named toString that is internally
      * invoked when an object variable is used in println.
      * For example:
