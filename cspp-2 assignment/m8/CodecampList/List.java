@@ -1,6 +1,7 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 public class List {
+    private int N_val = 10;
     //Implement all the methods mentioned to build a ListADT
 
     /*
@@ -57,11 +58,11 @@ public class List {
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
-    int[] a;
-    int size;
+    private int[] a;
+    private int size;
     public List() {
         size = 0;
-        a = new int[10];
+        a = new int[N_val];
         // what are the two variables to be initialized here?
         // think about the private variables described above.
         // What should be the default values?
@@ -86,7 +87,7 @@ public class List {
      *
      * The method returns void (nothing)
      */
-    public void add(int item) {
+    public void add(final int item) {
         //Inserts the specified element at the end of the list.
 
         a[size++] = item;
@@ -124,7 +125,7 @@ public class List {
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
         if (index > size) {
@@ -149,7 +150,7 @@ public class List {
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
-    public int get(int index) {
+    public int get(final int index) {
         if (index < size) {
             return a[index];
         } else {
@@ -193,7 +194,7 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         for (int element : a) {
             if (element == item) {
                 return true;
@@ -207,7 +208,7 @@ public class List {
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         for (int i = 0; i <= a.length - 1; i++) {
             if (a[i] == item) {
                 return i;
@@ -264,3 +265,4 @@ public class List {
         }
     }
 }
+
