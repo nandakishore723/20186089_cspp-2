@@ -62,11 +62,15 @@ public class List {
     // variable initialization should be done in the constructor
 
     /**
-     * The purpose of the constructor is to initialize the.
-     * class variables with some default values.
+     * The purpose of the constructor is to initialize the. class variables with
+     * some default values.
      */
     private int[] a;
     private int size;
+
+    /**
+     * Constructs the object.
+     */
     public List() {
         size = 0;
         a = new int[NAV];
@@ -100,11 +104,12 @@ public class List {
     }
 
     /**
-     * The size method returns the value of the size.
-     * The purpose of the method is to announce the size of the list
-     * to the objects outside the list
+     * The size method returns the value of the size. The purpose of the method.
+     * is to announce the size of the list to the objects outside the list
      *
      * The method returns an int. Empty list should return 0.
+     *
+     * @return     { description_of_the_return_value }
      */
     public int size() {
         // replace the code below to implement the size method
@@ -162,24 +167,19 @@ public class List {
     }
 
     /**
-     * What happens when you print an object using println?.
-     * Java provides a method named toString that is internally
-     * invoked when an object variable is used in println.
-     * For example:
-     * List l = new List();
-     * System.out.println(l);
-     * This statement is a shortcut for
+     * What happens when you print an object using println?. Java provides a.
+     * method named toString that is internally invoked when an object variable
+     * is used in println. For example: List l = new List();
+     * System.out.println(l); This statement is a shortcut for
      * System.out.println(l.toString());
      *
-     * So, implement the toString method to display the items
-     * in the list in the square brackets notation.
-     * i.e., if the list has numbers 1, 2, 3
-     * return the string [1,2,3]
-     * Caution: The array may be having other elements
-     * Example: [1,2,3,0,0,0,0,0,0,0]
-     * toString should only return the items in the list and
-     * not all the elements of the array.
+     * So, implement the toString method to display the items in the list in the
+     * square brackets notation. i.e., if the list has numbers 1, 2, 3 return
+     * the string [1,2,3] Caution: The array may be having other elements
+     * Example: [1,2,3,0,0,0,0,0,0,0] toString should only return the items in
+     * the list and not all the elements of the array.
      *
+     * @return     String representation of the object.
      */
     public String toString() {
         // Replace the code below
