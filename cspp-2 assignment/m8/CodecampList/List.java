@@ -1,7 +1,7 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 public class List {
-    private int N_val = 10;
+    private static int N_val = 10;
     //Implement all the methods mentioned to build a ListADT
 
     /*
