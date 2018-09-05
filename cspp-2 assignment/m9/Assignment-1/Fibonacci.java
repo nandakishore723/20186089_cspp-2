@@ -17,9 +17,8 @@ import java.util.Scanner;
  *
  */
 
-public class Fibonacci
-{
-   
+public class Fibonacci {
+
     /*public List() {
         size = 0;
         a = new int[n];*/
@@ -36,13 +35,13 @@ public class Fibonacci
         fib.add(0);
         fib.add(1);
         for (int i = 2; i < n; i++) {
-            int val = fib.get(i-1) + fib.get(i-2);
+            int val = fib.get(i - 1) + fib.get(i - 2);
             fib.add(val);
         }
         return fib;
     }
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
