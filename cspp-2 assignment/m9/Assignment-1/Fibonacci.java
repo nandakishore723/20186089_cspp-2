@@ -23,7 +23,8 @@ public class Fibonacci {
         size = 0;
         a = new int[n];*/
     /**
-     * fib is a static method takes a argument n n is the count of the fibonacci.
+     * fib is a static method takes a argument n n is the count of the.
+     * fibonacci.
      * numbers to be generated. The method returns a List with the n fibonacci
      * numbers.
      *
