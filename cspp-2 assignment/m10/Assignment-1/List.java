@@ -122,8 +122,9 @@ public class List {
         /**.
          * { item_description }
          */
-        if (size == list.length)
+        if (size == list.length) {
             resize();
+        }
         list[size++] = item;
     }
     /**.
