@@ -280,8 +280,9 @@ public class List {
         /**.
          * { item_description }
          */
-        if (size == 0)
+        if (size == 0) {
             return "[]";
+        }
         String str = "[";
         int i = 0;
         for (i = 0; i < size - 1; i++) {
@@ -327,8 +328,9 @@ public class List {
          * { item_description }
          */
         for (int i = 0; i < size; i++) {
-            if (item == list[i])
+            if (item == list[i]) {
                 return i;
+            }
         }
         return -1;
     }
