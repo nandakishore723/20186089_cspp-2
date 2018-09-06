@@ -384,7 +384,3 @@ public class List {
     }
 }
 
-
-
-
-
