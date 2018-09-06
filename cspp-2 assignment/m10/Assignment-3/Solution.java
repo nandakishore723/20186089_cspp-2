@@ -7,18 +7,35 @@ import java.util.Scanner;
 class Student {
 	private String name;
 
-	public Student(String name) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      name  The name
+	 */
+	public Student(final String name) {
 		//A constructor used to initialize the instance variables
 		this.name = name;
 	}
 
+	/**
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
 	public String getName() {
 		//Getter method which returns the value of instance variable
 		return this.name;
 	}
 
+	/**
+	 * { function_description }.
+	 *
+	 * @param      other  The other
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	@Override
-	public boolean equals(Object other) {
+	public boolean equals(final Object other) {
 		//This method is to check if two students names are equal or not
 		if (!(other instanceof Student)) {
 			return false;
@@ -28,15 +45,28 @@ class Student {
 		return this.getName().equals(that.getName());
 	}
 
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		return this.name;
 	}
 }
 
+/**
+ * Class for solution.
+ */
 public class Solution {
 
 
-	public static void main(String[] args) {
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		// create an object of the list to invoke methods on it
 		Scanner stdin = new Scanner(new BufferedInputStream(System.in));
 		String objectType = stdin.nextLine();
@@ -88,6 +118,7 @@ public class Solution {
 					System.out.println(listString.contains
 					                   (tokens[1]));
 					break;
+					default:
 				}
 			}
 			break;
@@ -142,6 +173,7 @@ public class Solution {
 					System.out.println(listInteger.contains
 					                   (Integer.parseInt((tokens[1]))));
 					break;
+					default:
 				}
 			}
 			break;
@@ -196,6 +228,7 @@ public class Solution {
 					System.out.println(listFloat.contains
 					                   (Float.parseFloat(tokens[1])));
 					break;
+					default:
 				}
 			}
 			break;
@@ -250,6 +283,7 @@ public class Solution {
 					System.out.println(listCharacter.contains
 					                   (tokens[1].charAt(0)));
 					break;
+					default:
 				}
 			}
 			break;
@@ -304,6 +338,7 @@ public class Solution {
 					System.out.println(listDouble.contains
 					                   (Double.parseDouble(tokens[1])));
 					break;
+					default:
 				}
 			}
 			break;
@@ -359,6 +394,7 @@ public class Solution {
 					System.out.println(listStudent.contains
 					                   (new Student(tokens[1])));
 					break;
+					default:
 				}
 			}
 			break;
