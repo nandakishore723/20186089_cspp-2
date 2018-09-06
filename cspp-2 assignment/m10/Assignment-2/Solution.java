@@ -16,7 +16,7 @@ public final  class Solution {
      * { function_description }.
      * @param      args  The arguments
      */
-	public static void main(final String[] args) {
+    public static void main(final String[] args) {
         /**.
          * { item_description }.
          */
@@ -35,7 +35,7 @@ public final  class Solution {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                 case "add":
-	                l.add(tokens[1]);
+                    l.add(tokens[1]);
                 break;
                 case "addAll":
                 if (tokens.length == 2) {
@@ -71,5 +71,7 @@ public final  class Solution {
                 default:
             }
         }
-	}
+    }
 }
+
+
