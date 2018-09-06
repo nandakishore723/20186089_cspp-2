@@ -62,14 +62,14 @@ class Student {
  */
 public class Solution {
 
+private Solution() {
+
+    }
     /**
      * { function_description }.
      *
      * @param      args  The arguments
      */
-    private Solution() {
-
-    }
     public static void main(final String[] args) {
     // create an object of the list to invoke methods on it
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
