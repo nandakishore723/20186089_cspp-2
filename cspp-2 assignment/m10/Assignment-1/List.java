@@ -2,8 +2,8 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
 public class List {
-    /**.
-     * { item_description }
+    /**
+     * { item_description }.
      */
     private static final int VAL = 10;
     /*
@@ -31,8 +31,8 @@ public class List {
     // don't create the array yet using new
     // that's the job of the List constructor
     private int[] list;
-    /**.
-     * { item_description }
+    /**
+     * { item_description }.
      */
     /*
      * What are the other class variables needed for creating a list?
@@ -341,6 +341,8 @@ public class List {
      array to the end of list*/
     /**
      * { item_description }.
+     *
+     * @param      items  The items
      */
     public void addAll(final int[] items) {
         /**.
