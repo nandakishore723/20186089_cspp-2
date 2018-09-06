@@ -14,10 +14,16 @@ interface StringListInterface {
     public boolean contains(String item);
     public int indexOf(String item);
 }
-//Write a StringList class which implements StringListInterface
+/**.
+ * { item_description }
+ */
+/*Write a StringList class which implements StringListInterface*/
 
 public class StringList implements StringListInterface {
-    //Implement all the methods mentioned to build a ListADT
+    /**.
+     * { item_description }
+     */
+    /*Implement all the methods mentioned to build a ListADT*/
 
     /*
      * The goal for the list is to store items.
@@ -76,6 +82,9 @@ public class StringList implements StringListInterface {
      * class variables with some default values.
      */
     public StringList() {
+        /**.
+         * { item_description }
+         */
 
         // what are the two variables to be initialized here?
         // think about the private variables described above.
@@ -90,6 +99,9 @@ public class StringList implements StringListInterface {
         // That is the initial value to use for size.
         size = 0;
     }
+    /**.
+     * { item_description }
+     */
 
     /**.
      * Overloaded constructor with list capacity as argument The default
@@ -104,9 +116,15 @@ public class StringList implements StringListInterface {
      * @param      capacity  The capacity
      */
     public StringList(final int capacity) {
+        /**.
+         * { item_description }
+         */
         size = 0;
         list = new String[capacity];
     }
+    /**.
+     * { item_description }
+     */
     /**
      * . The add method does what the name suggests. Add an String item to the
      * list. The assumption is to store the item at the end of the list What is
@@ -118,9 +136,15 @@ public class StringList implements StringListInterface {
      * @param      item  The item
      */
     public void add(final String item) {
+        /**.
+         * { item_description }
+         */
         list[size++] = item;
 
     }
+    /**.
+     * { item_description }
+     */
     /**
      * . The size method returns the value of the size. The purpose of the
      * method is to announce the size of the list to the objects outside the
@@ -131,8 +155,14 @@ public class StringList implements StringListInterface {
      * @return     { description_of_the_return_value }
      */
     public int size() {
+        /**.
+         * { item_description }
+         */
         return size;
     }
+    /**.
+     * { item_description }
+     */
     /*Inserts all the elements of specified int
     array to the end of list*/
 
@@ -142,6 +172,9 @@ public class StringList implements StringListInterface {
      * @param      items  The items
      */
     public void addAll(final String[] items) {
+        /**.
+         * { item_description }
+         */
         for (int i = 0; i < items.length; i++) {
             list[size] = items[i];
             size++;
@@ -156,8 +189,16 @@ public class StringList implements StringListInterface {
      *
      * @param      index  The index
      */
+    /**.
+     * { function_description }
+     *
+     * @param      index  The index
+     */
 
     public void remove(int index) {
+        /**.
+         * { item_description }
+         */
         if (index >= 0 && index < size) {
             for (int i = index; i < size - 1; i++) {
                 list[i] = list[i + 1];
@@ -167,6 +208,9 @@ public class StringList implements StringListInterface {
             System.out.println("Invalid Position Exception");
         }
     }
+    /**.
+     * { item_description }
+     */
     /**.
      * The remove method does what the name suggests. Removes a String item,
      * specified by the index argument, from the list It also does an additional
@@ -183,12 +227,18 @@ public class StringList implements StringListInterface {
      * @return     { description_of_the_return_value }
      */
     public String[] resize() {
+        /**.
+         * { var_description }
+         */
         String[] newlis = new String[size * 2];
         for (int i = 0; i < size; i++) {
             newlis[i] = list[i];
         }
         return newlis;
     }
+    /**.
+     * { item_description }
+     */
 
     /**
      * . What happens when you print an object using println? Java provides a
@@ -206,6 +256,9 @@ public class StringList implements StringListInterface {
      * @return     String representation of the object.
      */
     public String toString() {
+        /**.
+         * { item_description }
+         */
         if (size == 0) {
             return "[]";
         }
@@ -217,6 +270,9 @@ public class StringList implements StringListInterface {
         str = str + list[i] + "]";
         return str;
     }
+    /**.
+     * { item_description }
+     */
     /**
      * . Get method has to return the items that is at the index position passed
      * as an argument to the method. If the item doesn't exist then return a -1
@@ -231,6 +287,9 @@ public class StringList implements StringListInterface {
      * @return     { description_of_the_return_value }
      */
     public String get(int index) {
+        /**.
+         * { item_description }
+         */
         if (index < 0) {
             System.out.println("Negative Index Exception");
         }
@@ -240,8 +299,9 @@ public class StringList implements StringListInterface {
             return list[index];
         }
     }
-
-
+    /**.
+     * { item_description }
+     */
     /**.
      * Returns the index of the first occurrence of the specified element in
      * this list, or -1 if this list does not contain the element.
@@ -251,14 +311,19 @@ public class StringList implements StringListInterface {
      * @return     { description_of_the_return_value }
      */
     public int indexOf(final String item) {
+        /**.
+         * { item_description }
+         */
         for (int i = 0; i < size; i++) {
             if (item == list[i]) {
                 return i;
             }
         }
         return -1;
-
     }
+    /**.
+     * { item_description }
+     */
     /**.
      * Contains return true if the list has the item passed as an argument to
      * the method So, iterate through the list and return true if the item
@@ -269,7 +334,9 @@ public class StringList implements StringListInterface {
      * @return     { description_of_the_return_value }
      */
     public boolean contains(final String item) {
+        /**.
+         * { item_description }
+         */
         return indexOf(item) == -1;
     }
-
 }
