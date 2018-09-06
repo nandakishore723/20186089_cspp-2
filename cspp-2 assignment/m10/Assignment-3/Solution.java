@@ -5,6 +5,9 @@ import java.util.Scanner;
  * Class for student.
  */
 class Student {
+    /**
+     * { var_description }.
+     */
     private String name;
     /**
      * Constructs the object.
