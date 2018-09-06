@@ -294,8 +294,8 @@ public class Solution {
                     Integer.parseInt(tokens[1])));
                     break;
                 case "contains":
-                    System.out.println(listCharacter.contains
-                                       (tokens[1].charAt(0)));
+                    System.out.println(listCharacter.contains(
+                    tokens[1].charAt(0)));
                     break;
                     default:
                 }
