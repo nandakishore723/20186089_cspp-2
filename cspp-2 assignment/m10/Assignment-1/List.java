@@ -334,10 +334,10 @@ public class List {
     }
     /*Inserts all the elements of specified int
      array to the end of list*/
-    /**.
-     * { item_description }
+    /**
+     * { item_description }.
      */
-    public void addAll(final int items[]) {
+    public void addAll(final int[] items) {
         /**.
          * { item_description }
          */
@@ -392,7 +392,7 @@ public class List {
         return itcount;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */
@@ -416,9 +416,11 @@ public class List {
                     String[] t = tokens[1].split(",");
                     if (t.length == 1) {
                         l.add(Integer.parseInt(tokens[1]));
-                    } else {
+                    }
+                    else {
                         if (t.length > 1)
-                            l.add(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
+                            l.add(Integer.parseInt(t[0]),
+                            Integer.parseInt(t[1]));
                     }
                 }
                 break;
@@ -428,9 +430,10 @@ public class List {
             case "addAll":
                 if (tokens.length == 2) {
                     String[] t1 = tokens[1].split(",");
-                    int temp[] = new int[t1.length];
-                    for (int i = 0; i < temp.length; i++)
+                    int[] temp = new int[t1.length];
+                    for (int i = 0; i < temp.length; i++) {
                         temp[i] = Integer.parseInt(t1[i]);
+                    }
                     l.addAll(temp);
                 }
                 break;
@@ -458,6 +461,7 @@ public class List {
             case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
                 break;
+                default:
             }
         }
     }
