@@ -35,7 +35,7 @@ public class List {
     // don't create the array yet using new
     // that's the job of the List constructor
     /**
-    *array
+    *array.
     */
     private int[] list;
     /**
@@ -64,7 +64,7 @@ public class List {
     // again, don't initialize it here
     // variable initialization should be done in the constructor
     /**
-    *size
+    *size.
     */
     private int size;
     /**
@@ -483,3 +483,5 @@ public class List {
         }
     }
 }
+
+
