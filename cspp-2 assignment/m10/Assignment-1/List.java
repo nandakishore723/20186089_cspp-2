@@ -1,6 +1,10 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
+
+/**
+ * List of .
+ */
 public class List {
     /**
      * { item_description }.
@@ -30,6 +34,9 @@ public class List {
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
+    /**
+    *array
+    */
     private int[] list;
     /**
      * { item_description }.
@@ -56,6 +63,9 @@ public class List {
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
+    /**
+    *size
+    */
     private int size;
     /**
      * { item_description }.
@@ -423,11 +433,10 @@ public class List {
                     String[] t = tokens[1].split(",");
                     if (t.length == 1) {
                         l.add(Integer.parseInt(tokens[1]));
-                    }
-                    else {
+                    } else {
                         if (t.length > 1) {
                             l.add(Integer.parseInt(t[0]),
-                            Integer.parseInt(t[1]));
+                                  Integer.parseInt(t[1]));
                         }
                     }
                 }
@@ -469,7 +478,7 @@ public class List {
             case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
                 break;
-                default:
+            default:
             }
         }
     }
