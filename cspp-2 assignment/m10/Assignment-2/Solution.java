@@ -13,12 +13,12 @@ public final  class Solution {
          */
     }
     /**.
-     * { function_description }
+     * { function_description }.
      * @param      args  The arguments
      */
 	public static void main(final String[] args) {
         /**.
-         * { item_description }
+         * { item_description }.
          */
         /* create an object of the list to invoke methods on it*/
         StringList sl = new StringList();
