@@ -59,9 +59,10 @@ public class List {
 	/**.
 	 * { item_description }
 	 */
-	/*
-	 * The purpose of the constructor is to initialize the
-	 * class variables with some default values.
+	/**
+	 * The purpose of the constructor is to initialize.
+	 * the class variables with
+	 * some default values.
 	 */
 	public List() {
 		/**.
@@ -84,18 +85,17 @@ public class List {
 	/**.
 	 * { item_description }
 	 */
-	/*
-	 * Overloaded constructor with list capacity as argument
-	 * The default constructor sets the list capacity to 10
-	 * So, adding an item when the list size is 10
-	 * raises a Index Out of Bounds Exception
-	 * There will be some clients of the ADT that will require
-	 * the list to contain n elements which is known
-	 * at the time of creating the list.
+	/**
+	 * Overloaded constructor with list capacity as argument The default.
+	 * constructor sets the list capacity to 10 So, adding an item when the list
+	 * size is 10 raises a Index Out of Bounds Exception There will be some
+	 * clients of the ADT that will require the list to contain n elements which
+	 * is known at the time of creating the list.
 	 *
-	 * The overloaded constructor is a way to initialize a list with
-	 * a list capacity of n items where n is given as an argument to
-	 * constructor.
+	 * The overloaded constructor is a way to initialize a list with a list
+	 * capacity of n items where n is given as an argument to constructor.
+	 *
+	 * @param      capacity  The capacity
 	 */
 	public List(int capacity) {
 		/**.
@@ -107,16 +107,15 @@ public class List {
 	/**.
 	 * { item_description }
 	 */
-	/*
-	 * The add method does what the name suggests.
-	 * Add an int item to the list.
-	 * The assumption is to store the item at the end of the list
-	 * What is the end of the list?
-	 * Is it the same as the end of the array?
-	 * Think about how you can use the size variable to add item
-	 * to the list.
+	/**
+	 * The add method does what the name suggests. Add an int item to the list.
+	 * The assumption is to store the item at the end of the list What is the
+	 * end of the list? Is it the same as the end of the array? Think about how
+	 * you can use the size variable to add item to the list.
 	 *
 	 * The method returns void (nothing)
+	 *
+	 * @param      item  The item
 	 */
 	public void add(int item) {
 		/**.
@@ -158,8 +157,8 @@ public class List {
 	 * You know enough of Object Oriented Programming to answer these questions :-)
 	 *
 	 */
-	/**.
-	 * { function_description }
+	/**
+	 * . { function_description }
 	 */
 	private  void resize() {
 		/**.
@@ -168,12 +167,14 @@ public class List {
 		list  = Arrays.copyOf(list, 2 * size);
 	}
 
-	/*
+	/**
 	 * The size method returns the value of the size.
-	 * The purpose of the method is to announce the size of the list
-	 * to the objects outside the list
+	 * The purpose of the method
+	 * is to announce the size of the list to the objects outside the list
 	 *
 	 * The method returns an int. Empty list should return 0.
+	 *
+	 * @return     { description_of_the_return_value }
 	 */
 	public int size() {
 		/**.
@@ -202,8 +203,8 @@ public class List {
 	 * array = [1,3,0,0,0,0,0,0,0,0]
 	 * The method returns void (nothing)
 	 */
-	/**.
-	 * { function_description }
+	/**
+	 * . { function_description }
 	 *
 	 * @param      index  The index
 	 */
@@ -269,8 +270,8 @@ public class List {
 	 * not all the elements of the array.
 	 *
 	 */
-	/**.
-	 * Returns a string representation of the object.
+	/**
+	 * . Returns a string representation of the object.
 	 *
 	 * @return     String representation of the object.
 	 */
