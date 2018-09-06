@@ -1,6 +1,11 @@
 import java.util.Arrays;
 // An interface for ListADT of strings
 interface StringListInterface {
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     */
     public void add(String item);
     public void addAll(String items[]);
     public String get(int index);
