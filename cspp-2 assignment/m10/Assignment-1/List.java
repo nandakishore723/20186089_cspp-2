@@ -57,8 +57,8 @@ public class List {
     // again, don't initialize it here
     // variable initialization should be done in the constructor
     private int size;
-    /**.
-     * { item_description }
+    /**
+     * { item_description }.
      */
     /**
      * The purpose of the constructor is to initialize.
