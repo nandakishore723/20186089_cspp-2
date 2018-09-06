@@ -5,6 +5,7 @@ public class List {
     /**.
      * { item_description }
      */
+    private static final int VAL = 10;
     /*
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
@@ -75,7 +76,7 @@ public class List {
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
         **/
-        list = new int[10];
+        list = new int[VAL];
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
@@ -97,7 +98,7 @@ public class List {
      *
      * @param      capacity  The capacity
      */
-    public List(int capacity) {
+    public List(final int capacity) {
         /**.
          * { item_description }
          */
@@ -117,7 +118,7 @@ public class List {
      *
      * @param      item  The item
      */
-    public void add(int item) {
+    public void add(final int item) {
         /**.
          * { item_description }
          */
@@ -208,7 +209,7 @@ public class List {
      *
      * @param      index  The index
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         /**.
          * { item_description }
          */
@@ -239,7 +240,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int get(int index) {
+    public int get(final int index) {
         /**.
          * { item_description }
          */
@@ -302,7 +303,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         /**.
          * { item_description }
          */
@@ -321,7 +322,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         /**.
          * { item_description }
          */
@@ -336,7 +337,7 @@ public class List {
     /**.
      * { item_description }
      */
-    public void addAll(int items[]) {
+    public void addAll(final int items[]) {
         /**.
          * { item_description }
          */
@@ -356,7 +357,7 @@ public class List {
      * @param      index  The index
      * @param      item   The item
      */
-    public void add(int index, int item) {
+    public void add(final int index, final int item) {
         /**.
          * { item_description }
          */
@@ -378,7 +379,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int count(int item) {
+    public int count(final int item) {
         /**.
          * { var_description }
          */
@@ -395,7 +396,7 @@ public class List {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**.
          * { var_description }
          */
