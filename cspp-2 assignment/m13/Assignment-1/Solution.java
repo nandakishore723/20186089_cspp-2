@@ -15,7 +15,7 @@ class Set {
     private int size;
     public Set() {
         list = new int[10];
-    int size = 0;
+        int size = 0;
     }
     public int size() {
         return size;
@@ -34,7 +34,7 @@ class Set {
         }
         String str = "{";
         for (int i = 0; i < size - 1; i++) {
-            str += list[i] + ",";
+            str += list[i] + ", ";
         }
         return str + list[size - 1] + "}";
     }
@@ -52,7 +52,9 @@ class Set {
         if (size == list.length) {
             resize();
         }
-        list[size++] = item;
+        if (contains(item)!=true) {
+            list[size++] = item;
+        }
     }
 
     private void resize() {
@@ -60,7 +62,7 @@ class Set {
     }
 
     public void add(int[] newArray) {
-        for(int i = 0; i < newArray.length; i++) {
+        for (int i = 0; i < newArray.length; i++) {
             add(newArray[i]);
         }
     }
