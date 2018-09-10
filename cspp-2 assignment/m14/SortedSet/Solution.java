@@ -196,10 +196,10 @@ public final class Solution {
                 }
                 String[] arrstring3 = tokens[1].split(",");
                 int[] object = ss.subSet(Integer.parseInt(arrstring3[0]),
-                                        Integer.parseInt(arrstring3[1]));
+                                         Integer.parseInt(arrstring3[1]));
                 if (object != null) {
                     System.out.println(Arrays.toString(object).replace("[",
-                        "{").replace("]", "}"));
+                                       "{").replace("]", "}"));
                 }
                 break;
             case "headSet":
@@ -209,7 +209,7 @@ public final class Solution {
                 int[] obj = ss.headSet(Integer.parseInt(tokens[1]));
                 if (obj != null) {
                     System.out.println(Arrays.toString(obj).replace("[",
-                        "{").replace("]", "}"));
+                                       "{").replace("]", "}"));
                 }
                 break;
             case "last":
