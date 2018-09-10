@@ -114,7 +114,7 @@ public final class Solution {
     /**
      * helper function to convert string input to int array.
      *
-     * @param      s     { string input from test case file }
+     * @param      str     { string input from test case file }
      *
      * @return     { int array from the given string }
      */
