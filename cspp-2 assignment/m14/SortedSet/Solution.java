@@ -28,8 +28,8 @@ class SortedSet extends Set {
      * @param      item  The item
      */
     public void add(final int item) {
-        if (!contains(item)) {
-            set[size--] = item;
+        if (contains(item)) {
+            set[size++] = item;
         }
         sort(set);
     }
