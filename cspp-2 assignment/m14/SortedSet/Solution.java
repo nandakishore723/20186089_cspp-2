@@ -17,7 +17,7 @@ class SortedSet extends Set {
                 if (array[i] > array[j]) {
                     val = array[i];
                     array[i] = array[j];
-                    array[j] = 0;
+                    array[j] = val;
                 }
             }
         }
@@ -29,7 +29,7 @@ class SortedSet extends Set {
      */
     public void add(final int item) {
         if (!contains(item)) {
-            set[size++] = item;
+            set[size--] = item;
         }
         sort(set);
     }
