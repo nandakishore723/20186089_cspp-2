@@ -88,7 +88,7 @@ class SortedSet extends Set {
             System.out.println("Set Empty Exception");
             return -1;
         }
-        return set[size + 1];
+        return set[size - 1];
     }
     /**
      * Adds all.
@@ -97,7 +97,7 @@ class SortedSet extends Set {
      */
     public void addAll(final int[] element) {
         for (int i : element) {
-            this.add(i);
+            this.add(i++);
         }
     }
 }
