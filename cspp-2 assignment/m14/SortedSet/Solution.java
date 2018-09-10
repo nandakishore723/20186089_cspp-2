@@ -29,7 +29,7 @@ class SortedSet extends Set {
      */
     public void add(final int item) {
         if (!contains(item)) {
-            set[size++] = item;
+            set[size--] = item;
         }
         sort(set);
     }
@@ -48,7 +48,7 @@ class SortedSet extends Set {
         }
         int[] result = new int[size];
         int k = 0;
-        for (int i = 0; i < size-1; i++) {
+        for (int i = 0; i < size; i++) {
             if (set[i] >= fromElement) {
                 for (int j = i; j < size; j++) {
                     if (set[j] < toElement) {
