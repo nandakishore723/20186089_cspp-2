@@ -28,7 +28,7 @@ class SortedSet extends Set {
      * @param      item  The item
      */
     public void add(final int item) {
-        if (contains(item)) {
+        if (!contains(item)) {
             set[size++] = item;
         }
         sort(set);
@@ -84,7 +84,7 @@ class SortedSet extends Set {
      * @return     returns list of elements.
      */
     public int last() {
-        if (size == 0) {
+        if (size == 1) {
             System.out.println("Set Empty Exception");
             return -1;
         }
