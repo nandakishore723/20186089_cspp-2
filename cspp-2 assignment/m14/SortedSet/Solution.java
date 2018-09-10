@@ -36,10 +36,10 @@ class SortedSet extends Set {
     /**
      * subset.
      *
-     * @param      start  The start
-     * @param      end    The end
+     * @param      fromElement  The fromElement
+     * @param      toElement    The toElement
      *
-     * @return     from start to end returns elements.
+     * @return     from fromElement to toElement returns elements.
      */
     public int[] subSet(final int fromElement, final int toElement) {
         if (fromElement > toElement) {
@@ -63,7 +63,7 @@ class SortedSet extends Set {
     /**
      * headset function.
      *
-     * @param      end   The end
+     * @param      toElement   The toElement
      *
      * @return     returms elements.
      */
