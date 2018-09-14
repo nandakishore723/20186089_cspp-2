@@ -24,7 +24,13 @@ class Show {
  * Class for patron.
  */
 class Patron {
+  /**
+   * { var_description }.
+   */
   String patronname;
+  /**
+   * { var_description }.
+   */
   String mobilenumber;
   /**
    * Constructs the object.
