@@ -180,6 +180,9 @@ class BookYourShow {
 
   }
 }
+/**
+ * { item_description }.
+ */
 public final class Solution {
   /**
    * main method to drive program.
