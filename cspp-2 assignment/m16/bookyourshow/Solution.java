@@ -46,7 +46,13 @@ class BookYourShow {
    */
   Show[] movielist;
   Patron[] patronlist;
+  /**
+   * { var_description }.
+   */
   private int size = 0;
+  /**
+   * { var_description }.
+   */
   private int patronsize = 0;
 
   /**
