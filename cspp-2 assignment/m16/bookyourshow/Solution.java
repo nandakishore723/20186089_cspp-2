@@ -7,7 +7,7 @@ class Show {
   /**
    * { var_description }.
    */
-  public String moviename;
+  String moviename;
   /**
    * { var_description }.
    */
