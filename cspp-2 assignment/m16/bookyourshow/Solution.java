@@ -7,15 +7,15 @@ class Show {
   /**
    * { var_description }.
    */
-  final String moviename;
+  public String moviename;
   /**
    * { var_description }.
    */
-  final String timedate;
+  public String timedate;
   /**
    * { var_description }.
    */
-  final String[] seats;
+  public String[] seats;
   /**
    * Constructs the object.
    *
