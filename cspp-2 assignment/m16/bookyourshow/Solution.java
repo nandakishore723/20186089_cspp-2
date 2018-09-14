@@ -7,7 +7,7 @@ class Show {
     String moviename;
     String timedate;
     String[] seats;
-    public Show(String a, String b, String[] c) {
+    public Show(final String a,final String b,final String[] c) {
         moviename = a;
         timedate = b;
         seats = c;
@@ -19,7 +19,7 @@ class Show {
 class Patron {
     String patronname;
     String mobilenumber;
-    public Patron(String a, String b) {
+    public Patron(final String a,final String b) {
         patronname = a;
         mobilenumber = b;
     }
@@ -51,7 +51,7 @@ class BookYourShow {
      *
      * @param      k     { parameter_description }
      */
-    public void addAShow(Show k) {
+    public void addAShow(final Show k) {
         movielist[size++] = k;
     }
 
@@ -64,7 +64,7 @@ class BookYourShow {
      *
      * @return     A show.
      */
-    public Show getAShow(String a, String b) {
+    public Show getAShow(final String a,final String b) {
         for (int i = 0; i < size; i++) {
             if ((movielist[i].moviename).equals(a)) {
                 if ((movielist[i].timedate).equals(b)) {
@@ -83,7 +83,7 @@ class BookYourShow {
      * @param      c     { parameter_description }
      * @param      d     { parameter_description }
      */
-    public void bookAShow(String a, String b, Patron c, String[] d) {
+    public void bookAShow(final String a,final String b,final Patron c,final String[] d) {
         int cnt = 0;
         if (size == 0) {
             System.out.println("No show");
@@ -126,7 +126,7 @@ class BookYourShow {
      *
      * @return     { description_of_the_return_value }
      */
-    public boolean printTicket(String a, String b, String c) {
+    public boolean printTicket(final String a,final String b,final String c) {
         for (int i = 0; i < patronsize; i++) {
             if (c.equals(patronlist[i].mobilenumber)) {
                 for (int j = 0; j < size; j++) {
