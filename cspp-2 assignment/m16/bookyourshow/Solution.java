@@ -14,7 +14,7 @@ class Show {
    * @param      b     { parameter_description }
    * @param      c     { parameter_description }
    */
-  public Show(final String a, final String b, final String[] c) {
+  Show(final String a, final String b, final String[] c) {
     moviename = a;
     timedate = b;
     seats = c;
