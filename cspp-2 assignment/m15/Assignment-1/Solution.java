@@ -16,12 +16,12 @@ class List {
     /**
      * 10 is a magic number.
      */
-    private final int VAL = 10;
+    private final int val = 10;
     /**
      * Constructs the object.
      */
     List() {
-        list = new int[VAL];
+        list = new int[val];
         size = 0;
     }
     /**
