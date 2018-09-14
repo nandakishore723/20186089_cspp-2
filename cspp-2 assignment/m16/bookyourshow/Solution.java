@@ -46,8 +46,8 @@ class BookYourShow {
    */
   Show[] movielist;
   Patron[] patronlist;
-  int size = 0;
-  int patronsize = 0;
+  private int size = 0;
+  private int patronsize = 0;
 
   /**
    * Constructs the object.
@@ -92,7 +92,7 @@ class BookYourShow {
   }
 
   /**
-   * { function_description }
+   * { function_description }.
    *
    * @param      a     { parameter_description }
    * @param      b     { parameter_description }
@@ -134,7 +134,7 @@ class BookYourShow {
   }
 
   /**
-   * { function_description }
+   * { function_description }.
    *
    * @param      a     { parameter_description }
    * @param      b     { parameter_description }
