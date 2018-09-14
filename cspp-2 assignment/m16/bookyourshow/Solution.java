@@ -15,7 +15,7 @@ class Show {
   /**
    * { var_description }.
    */
-  String[] seats;
+  public String[] seats;
   /**
    * Constructs the object.
    *
