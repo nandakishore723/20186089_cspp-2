@@ -80,7 +80,7 @@ class BookYourShow {
   /**
    * Constructs the object.
    */
-  public BookYourShow() {
+  BookYourShow() {
     this.movielist = new Show[TEN];
     this.patronlist = new Patron[TEN];
     this.size = 0;
