@@ -9,12 +9,12 @@ class SortedSet {
     /**
      * 10 is a magic number.
      */
-    private static final int val = 10;
+    private static final int VAL = 10;
     /**
      * Empty constructor.
      */
     protected SortedSet() {
-        sortedset = new int[val];
+        sortedset = new int[VAL];
         size = 0;
     }
     /**
