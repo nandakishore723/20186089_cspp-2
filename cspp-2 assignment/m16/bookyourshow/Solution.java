@@ -45,6 +45,9 @@ class BookYourShow {
    * Constructs the object.
    */
   Show[] movielist;
+  /**
+   * { var_description }.
+   */
   Patron[] patronlist;
   /**
    * { var_description }.
