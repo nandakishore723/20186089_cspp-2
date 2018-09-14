@@ -208,7 +208,7 @@ class BookYourShow {
 /**
  * { item_description }.
  */
-public class Solution {
+public final class Solution {
   /**
    * main method to drive program.
    *
