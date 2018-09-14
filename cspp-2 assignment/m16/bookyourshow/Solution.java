@@ -39,9 +39,10 @@ class BookYourShow {
     /**
      * Constructs the object.
      */
+    private static final int TEN = 10;
     public BookYourShow() {
-        this.movielist = new Show[10];
-        this.patronlist = new Patron[10];
+        this.movielist = new Show[TEN];
+        this.patronlist = new Patron[TEN];
         this.size = 0;
     }
 
