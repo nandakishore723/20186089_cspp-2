@@ -7,11 +7,11 @@ class Show {
   /**
    * { var_description }.
    */
-  String moviename;
+  public String moviename;
   /**
    * { var_description }.
    */
-  public String timedate;
+  String timedate;
   /**
    * { var_description }.
    */
