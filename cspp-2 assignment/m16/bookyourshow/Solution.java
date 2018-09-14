@@ -130,8 +130,10 @@ class BookYourShow {
         for (int i = 0; i < patronsize; i++) {
             if (c.equals(patronlist[i].mobilenumber)) {
                 for (int j = 0; j < size; j++) {
-                    if (b.equals(movielist[j].timedate) && a.equals(movielist[j].moviename)) {
-                        System.out.println(patronlist[i].mobilenumber + " " + a + " " + b);
+                    if (b.equals(movielist[j].timedate)
+                    && a.equals(movielist[j].moviename)) {
+                        System.out.println(
+                        patronlist[i].mobilenumber + " " + a + " " + b);
                         return true;
                     }
                 }
