@@ -105,7 +105,8 @@ class BookYourShow {
    * @param      c     { parameter_description }
    * @param      d     { parameter_description }
    */
-  public void bookAShow(final String a, final String b, final Patron c, final String[] d) {
+  public void bookAShow(final String a, final String b, final Patron c,
+  final String[] d) {
     int cnt = 0;
     if (size == 0) {
       System.out.println("No show");
