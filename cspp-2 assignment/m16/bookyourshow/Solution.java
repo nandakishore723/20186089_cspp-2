@@ -11,11 +11,11 @@ class Show {
   /**
    * { var_description }.
    */
-  String timedate;
+  public String timedate;
   /**
    * { var_description }.
    */
-  public String[] seats;
+  String[] seats;
   /**
    * Constructs the object.
    *
