@@ -7,6 +7,13 @@ class Show {
   String moviename;
   String timedate;
   String[] seats;
+  /**
+   * Constructs the object.
+   *
+   * @param      a     { parameter_description }
+   * @param      b     { parameter_description }
+   * @param      c     { parameter_description }
+   */
   public Show(final String a, final String b, final String[] c) {
     moviename = a;
     timedate = b;
@@ -19,6 +26,12 @@ class Show {
 class Patron {
   String patronname;
   String mobilenumber;
+  /**
+   * Constructs the object.
+   *
+   * @param      a     { parameter_description }
+   * @param      b     { parameter_description }
+   */
   public Patron(final String a, final String b) {
     patronname = a;
     mobilenumber = b;
@@ -40,6 +53,9 @@ class BookYourShow {
    * Constructs the object.
    */
   private static final int TEN = 10;
+  /**
+   * Constructs the object.
+   */
   public BookYourShow() {
     this.movielist = new Show[TEN];
     this.patronlist = new Patron[TEN];
