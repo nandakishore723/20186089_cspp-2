@@ -38,7 +38,7 @@ class Patron {
    * @param      a     { parameter_description }
    * @param      b     { parameter_description }
    */
-  public Patron(final String a, final String b) {
+  Patron(final String a, final String b) {
     patronname = a;
     mobilenumber = b;
   }
