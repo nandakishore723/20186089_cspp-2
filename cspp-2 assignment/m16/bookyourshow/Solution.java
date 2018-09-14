@@ -8,7 +8,13 @@ class Show {
    * { var_description }.
    */
   String moviename;
+  /**
+   * { var_description }.
+   */
   String timedate;
+  /**
+   * { var_description }.
+   */
   String[] seats;
   /**
    * Constructs the object.
