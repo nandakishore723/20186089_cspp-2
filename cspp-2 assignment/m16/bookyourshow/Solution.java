@@ -4,6 +4,9 @@ import java.util.Scanner;
  * Class for show.
  */
 class Show {
+  /**
+   * { var_description }.
+   */
   String moviename;
   String timedate;
   String[] seats;
