@@ -50,11 +50,11 @@ class BookYourShow {
   /**
    * Constructs the object.
    */
-  Show[] movielist;
+  private Show[] movielist;
   /**
    * { var_description }.
    */
-  Patron[] patronlist;
+  private Patron[] patronlist;
   /**
    * { var_description }.
    */
