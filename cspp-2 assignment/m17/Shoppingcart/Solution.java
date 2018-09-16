@@ -91,6 +91,10 @@ class ShoppingCart {
     /**
      * { var_description }.
      */
+    private final int tempa = 15;
+    /**
+     *  catalog size.
+     */
     private final int temp = 100;
     /**
      *  catalog size.
@@ -223,7 +227,7 @@ class ShoppingCart {
         float totalAmount = totalAmount();
         float discount = totalAmount * couponcode;
         float finalAmount = totalAmount - discount;
-        float payableAmount = finalAmount + (finalAmount * 15 / 100);
+        float payableAmount = finalAmount + (finalAmount * tempa / temp);
         return payableAmount;
     }
 
@@ -269,7 +273,7 @@ class ShoppingCart {
         float discount = totalAmount() * couponcode;
         System.out.println("Disc%:" + discount);
         float finalAmount = totalAmount() - discount;
-        System.out.println("Tax:" + (finalAmount * 15 / 100));
+        System.out.println("Tax:" + (finalAmount * tempa / temp));
         System.out.println("Payable amount: " + getPayableAmount());
     }
 
@@ -278,7 +282,12 @@ class ShoppingCart {
 /**
  * Class for solution.
  */
-class Solution {
+public class Solution {
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         ShoppingCart s = new ShoppingCart();
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
