@@ -100,8 +100,17 @@ class ShoppingCart {
      *  catalog size.
      */
     private final float foa1 = 0.1f;
+    /**
+     * { var_description }.
+     */
     private final float foa2 = 0.2f;
+    /**
+     * { var_description }.
+     */
     private final float foa3 = 0.3f;
+    /**
+     * { var_description }.
+     */
     private final float foa4 = 0.5f;
     /**
      *  catalog size.
