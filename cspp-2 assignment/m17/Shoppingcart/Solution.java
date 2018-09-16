@@ -300,7 +300,7 @@ class ShoppingCart {
  */
 public class Solution {
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */
