@@ -253,7 +253,7 @@ class ShoppingCart {
      * @param      coupon  The coupon
      */
     public void applyCoupon(final String coupon) {
-        if (flag == false) {
+        if (!flag) {
             if (coupon.equals("IND10")) {
                 couponcode = foa1;
             } else if (coupon.equals("IND20")) {
@@ -299,6 +299,12 @@ class ShoppingCart {
  * Class for solution.
  */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
+    protected Solution(){
+        //empty.
+    }
     /**
      * { function_description }.
      *
