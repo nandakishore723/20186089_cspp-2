@@ -302,7 +302,7 @@ public class Solution {
     /**
      * Constructs the object.
      */
-    protected Solution(){
+    protected Solution() {
         //empty.
     }
     /**
