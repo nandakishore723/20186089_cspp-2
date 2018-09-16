@@ -91,7 +91,7 @@ class ShoppingCart {
     /**
      * { var_description }.
      */
-    private final int temp = 50;
+    private final int temp = 100;
     /**
      *  catalog size.
      */
