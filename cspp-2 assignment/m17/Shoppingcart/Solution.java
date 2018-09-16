@@ -67,7 +67,7 @@ class Item {
      * @param      unitPrice1    The unit price
      */
     Item(final String productName1,
-        final int quantity1, final  float unitPrice1) {
+         final int quantity1, final  float unitPrice1) {
         this.productName = productName1;
         this.quantity = quantity1;
         this.unitPrice = unitPrice1;
