@@ -72,37 +72,39 @@ public final class Solution {
      * @param      quiz           The quiz object
      * @param      questionCount  The question count
      */
-    public static void loadQuestions(final Scanner s, final Quiz quiz, final int questionCount) {
-        // write your code here to read the questions from the console
-        // tokenize the question line and create the question object
-        // add the question objects to the quiz class
-        if (questionCount == 0) {
-        	System.out.println("Quiz does not have questions");
-        } else {
-        	for (int i = 0; i < questionCount; i++) {
-        		question = s.nextLine();
-        		String[] tokens = line.split(":");
-        		if (tokens[i] !=5) {
-        			System.out.println("Error! Malformed question");
-        		}
-        		if (tokens[1] != 2) {
-        			System.out.println("<question text> does not have enough answer choices");
-        		}
-        		if (tokens[2] > indexOf(choice)) {
-        			System.out.println(
-        				"Error! Correct answer choice number is out of range for <question text>");
-        		}
-        		if (tokens[3] > 0) {
-        			System.out.println("Invalid max marks for <question text>");
-        		}
-        		if (tokens[4] <= 0) {
-        			System.out.println("Invalid penalty for <question text>");
-        		}
-        		}
-        	}
-        }
-    }
+    static Quiz[] quizlist;
+	static int qsize;
+	static int tokensize = 0;
+	public static void loadQuestions(final Scanner s, final Quiz quiz, final int questionCount) {
+		// write your code here to read the questions from the console
+		// tokenize the question line and create the question object
+		// add the question objects to the quiz class
+		quizlist = new Quiz[20];
+		qsize = 0;
+		for (int i = 0; i < questionCount; i++) {
+			String[] questoken = s.nextLine().split(":");
+			tokensize = questoken.length;
+			String[] choice = questoken[1].split(",");
+			if (tokensize == 5) {
+				if (choice.length >= 2) {
+					quizlist[qsize++] = new Quiz(choice, Integer.parseInt(questoken[2]), Integer.parseInt(questoken[3]), Integer.parseInt(questoken[4]));
+				} else {
+					System.out.println("invalid");
+				}
+			}
+		}
+		if (qsize > 0) {
+			System.out.println(qsize + " are added to the quiz");
 
+		} else {
+			if (tokensize != 5) {
+				System.out.println("Quiz does not have questions");
+			} else {
+
+				System.out.println("Error! Malformed question");
+			}
+		}
+	}
 
 
     /**
