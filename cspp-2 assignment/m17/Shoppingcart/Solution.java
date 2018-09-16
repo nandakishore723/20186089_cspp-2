@@ -99,6 +99,13 @@ class ShoppingCart {
     /**
      *  catalog size.
      */
+    private final float foa1 = 0.1f;
+    private final float foa2 = 0.2f;
+    private final float foa3 = 0.3f;
+    private final float foa4 = 0.5f;
+    /**
+     *  catalog size.
+     */
     private int catalogSize;
     /**
      * cart size.
@@ -239,13 +246,13 @@ class ShoppingCart {
     public void applyCoupon(final String coupon) {
         if (flag == false) {
             if (coupon.equals("IND10")) {
-                couponcode = 0.1f;
+                couponcode = foa1;
             } else if (coupon.equals("IND20")) {
-                couponcode = 0.2f;
+                couponcode = foa2;
             } else if (coupon.equals("IND30")) {
-                couponcode = 0.3f;
+                couponcode = foa3;
             } else if (coupon.equals("IND50")) {
-                couponcode = 0.5f;
+                couponcode = foa4;
             } else {
                 System.out.println("Invalid coupon");
                 return;
