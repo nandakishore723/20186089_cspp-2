@@ -11,7 +11,7 @@ class Show {
   /**
    * { var_description }.
    */
-  String timedate;
+  public String timedate;
   /**
    * { var_description }.
    */
