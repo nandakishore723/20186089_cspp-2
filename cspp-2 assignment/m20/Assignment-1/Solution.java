@@ -141,7 +141,7 @@ class Question {
      */
     public String toString() {
         String s = this.getQuestionText()
-        + "(" + this.getMaxMarks() + ")" + "\n";
+                   + "(" + this.getMaxMarks() + ")" + "\n";
 
         for (int i = 0; i < this.choices.length - 1; i++) {
             s += this.choices[i] + "\t";
@@ -216,11 +216,11 @@ class Quiz {
             s += questions[i].getQuestionText() + "\n";
             if (questions[i].evaluateResponse(questions[i].getResponse())) {
                 s += " Correct Answer! - Marks Awarded: "
-                + questions[i].getMaxMarks() + "\n";
+                     + questions[i].getMaxMarks() + "\n";
                 score += questions[i].getMaxMarks();
             } else {
                 s += " Wrong Answer! - Penalty: "
-                + questions[i].getPenalty() + "\n";
+                     + questions[i].getPenalty() + "\n";
                 score += questions[i].getPenalty();
             }
 
@@ -329,7 +329,7 @@ public final class Solution {
 
                 if (tokens[1].length() < minlength) {
                     System.out.println(tokens[0]
-                        + " does not have enough answer choices");
+                                       + " does not have enough answer choices");
                     noLoadingProblem = false;
                     return;
                 }
@@ -338,7 +338,7 @@ public final class Solution {
 
                 if (Integer.parseInt(tokens[2]) > maxchoiceno) {
                     System.out.println("Error! Correct answer choice number "
-                        + "is out of range for question text " + (i + 1));
+                                       + "is out of range for question text " + (i + 1));
                     noLoadingProblem = false;
                     return;
                 }
@@ -366,9 +366,9 @@ public final class Solution {
 
 
                 quiz.addQuestion(new Question(tokens[0], tokens[1].split(","),
-                Integer.parseInt(tokens[2]),
-                Integer.parseInt(tokens[marksindex]),
-                Integer.parseInt(tokens[penaltyindex])));
+                                              Integer.parseInt(tokens[2]),
+                                              Integer.parseInt(tokens[marksindex]),
+                                              Integer.parseInt(tokens[penaltyindex])));
             }
 
         } catch (ArrayIndexOutOfBoundsException e) {
