@@ -329,7 +329,7 @@ public final class Solution {
 
                 if (tokens[1].length() < minlength) {
                     System.out.println(tokens[0]
-                                       + " does not have enough answer choices");
+                    + " does not have enough answer choices");
                     noLoadingProblem = false;
                     return;
                 }
