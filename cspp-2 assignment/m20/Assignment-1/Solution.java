@@ -338,7 +338,7 @@ public final class Solution {
 
                 if (Integer.parseInt(tokens[2]) > maxchoiceno) {
                     System.out.println("Error! Correct answer choice number "
-                                       + "is out of range for question text " + (i + 1));
+                    + "is out of range for question text " + (i + 1));
                     noLoadingProblem = false;
                     return;
                 }
