@@ -18,6 +18,16 @@ class Task {
     Task() {
 
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      task       The task
+     * @param      name       The name
+     * @param      min        The minimum
+     * @param      important  The important
+     * @param      urgent     The urgent
+     * @param      status     The status
+     */
     Task(String task, String name, int min, boolean important,
      boolean urgent, String status) throws Exception {
         if (task.equals("")) {
@@ -43,15 +53,41 @@ class Task {
         }
 
     }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String task () {
         return task;
     }
+
+
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String name() {
         return name;
     }
+
+
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int min() {
         return min;
     }
+
+
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String important() {
         String s1 = "";
         if (important) {
@@ -61,6 +97,13 @@ class Task {
         }
         return s1;
     }
+
+
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String urgent() {
         String s2 = "";
         if (urgent) {
@@ -69,10 +112,24 @@ class Task {
             s2 = "Not Urgent";
         }
         return s2;
+
+
     }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String status() {
         return status;
+
+
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String s2 = "";
         String s1 = "";
@@ -91,6 +148,9 @@ class Task {
     }
 }
 
+/**
+ * Class for todoist.
+ */
 class Todoist {
 
 }
