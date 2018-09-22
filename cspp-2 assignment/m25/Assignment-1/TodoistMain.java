@@ -19,28 +19,26 @@ class Task {
 
     }
     Task(String task, String name, int min, boolean important, boolean urgent, String status)
-     throws Exception {
-            if (task.equals(" ")) {
-                throw  new Exception("Title not provided");
+    throws Exception {
+        if (task.equals("")) {
+            throw  new Exception("Title not provided");
 
         } else {
-                    this.task = task;
+            this.task = task;
         }
         this.name = name;
-            if (min >= 0) {
-        this.min = min;
-        }
-        else {
+        if (min >= 0) {
+            this.min = min;
+        } else {
             throw new Exception("Invalid timeToComplete " + min);
         }
 
         this.important = important;
         this.urgent = urgent;
-            if (status.equals("done") || status.equals("todo")) {
-            this.status = status;   
-        
-        } else 
-        {
+        if (status.equals("done") || status.equals("todo")) {
+            this.status = status;
+
+        } else {
             throw new Exception("Invalid status " + status);
         }
 
@@ -53,7 +51,7 @@ class Task {
     }
     public int min() {
         return min;
-    } 
+    }
     public String important() {
         String s1 = "";
         if (important) {
