@@ -64,7 +64,7 @@ class Task {
     }
 
     public void important(boolean important) {
-        if(getimportant()==true) {
+        if (getimportant() == true) {
             System.out.println("important");
         } else {
             System.out.println("not important");
@@ -72,7 +72,7 @@ class Task {
     }
 
     public void urgent(boolean urgent) {
-        if(geturgent()==true) {
+        if (geturgent() == true) {
             System.out.println("urgent");
         } else {
             System.out.println("not urgent");
