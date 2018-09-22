@@ -18,8 +18,8 @@ class Task {
     Task() {
 
     }
-    Task(String task, String name, int min, boolean important, boolean urgent, String status)
-    throws Exception {
+    Task(String task, String name, int min, boolean important,
+     boolean urgent, String status) throws Exception {
         if (task.equals("")) {
             throw  new Exception("Title not provided");
 
