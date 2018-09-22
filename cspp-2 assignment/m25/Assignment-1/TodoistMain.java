@@ -9,84 +9,51 @@ import java.util.Arrays;
  * Class for task.
  */
 class Task {
-    private String title;
-    private String assignedTo;
-    private int timeToComplete;
+    private String task;
+    private String name;
+    private int min;
     private boolean important;
     private boolean urgent;
     private String status;
-    Task(String title, String assignedTo, int timeToComplete,
-         boolean important, boolean urgent, String status) {
-        this.title = title;
-        this.assignedTo = assignedTo;
-        this.timeToComplete = timeToComplete;
+    Task(String task, String name, int min, boolean important,
+        boolean urgent, String status) {
+        this.task = task;
+
+        this.name = name;
+        this.min = min;
         this.important = important;
         this.urgent = urgent;
         this.status = status;
     }
-
-
-    public String gettitle() {
-        return this.title;
-    }
-    public void settitle(String title) {
-        this.title = title;
-    }
-    public String getassignedTo() {
-        return this.assignedTo;
-    }
-    public void setassignedTo(String assignedTo) {
-        this.assignedTo = assignedTo;
-    }
-    public int gettimeToComplete() {
-        return this.timeToComplete;
-    }
-    public void settimeToComplete(int timeToComplete) {
-        this.timeToComplete = timeToComplete;
-    }
-    public boolean getimportant() {
-        return this.important;
-    }
-    public void setimportant(boolean important) {
-        this.important = important;
-    }
-    public boolean geturgent() {
-        return this.urgent;
-    }
-    public void seturgent(boolean urgent) {
-        this.urgent = urgent;
-    }
-    public String getstatus() {
-        return this.status;
-    }
-    public void setstatus(String status) {
-        this.status = status;
-    }
-
-    public void important(boolean important) {
-        if (getimportant() == true) {
-            System.out.println("important");
-        } else {
-            System.out.println("not important");
+    public String toString() {
+        if (task.equals("")) {
+            System.out.println("Title not provided");
+            throw new NullPointerException();
         }
+        if (min < 0) {
+            System.out.println("Invalid timetoComplete "+ min);
+            throw new IllegalArgumentException();
+        }
+        String one = "";
+        String two = "";
+        if (urgent){
+            one = "Urgent";
+        } else {
+            one = "Not Urgent";
+        }
+        if (important) {
+            two = "Important";
+        } else {
+            two = "Not Important";
+        }
+        if (task == "") {
+            System.out.println("Title not provided");
+        }
+        return (task+ ", " + name + ", " + min + ", " + two + ", " + one + ", " + status);
+
     }
 
-    public void urgent(boolean urgent) {
-        if (geturgent() == true) {
-            System.out.println("urgent");
-        } else {
-            System.out.println("not urgent");
-        }
-    }
-    public String tostring() {
-        String s = "";
-        s = s + title + " " + assignedTo + " " + timeToComplete + " "
-            + getimportant() + " " + urgent + " " + status;
-        return s;
-    }
 }
-
-
 class Todoist {
 
 }
