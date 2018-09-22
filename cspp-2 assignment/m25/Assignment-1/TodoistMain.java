@@ -29,7 +29,7 @@ class Task {
      * @param      status     The status
      */
     Task(String task, String name, int min, boolean important,
-     boolean urgent, String status) throws Exception {
+         boolean urgent, String status) throws Exception {
         if (task.equals("")) {
             throw  new Exception("Title not provided");
 
