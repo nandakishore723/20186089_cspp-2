@@ -63,7 +63,13 @@ class Task {
         this.status = status;
     }
 
-
+    public void important(boolean important) {
+        if(getimportant()==true){
+            System.out.println("important");
+        } else {
+            System.out.println("not important");
+        }
+    }
     public String tostring() {
         String s = "";
         s = s + title + " " + assignedTo + " " + timeToComplete + " "
