@@ -15,45 +15,84 @@ class Task {
     private boolean important;
     private boolean urgent;
     private String status;
-    Task(String task, String name, int min, boolean important,
-        boolean urgent, String status) {
-        this.task = task;
+    Task() {
 
+    }
+    Task(String task, String name, int min, boolean important, boolean urgent, String status)
+     throws Exception {
+            if (task.equals(" ")) {
+                throw  new Exception("Title not provided");
+
+        } else {
+                    this.task = task;
+        }
         this.name = name;
+            if (min >= 0) {
         this.min = min;
+        }
+        else {
+            throw new Exception("Invalid timeToComplete " + min);
+        }
+
         this.important = important;
         this.urgent = urgent;
-        this.status = status;
+            if (status.equals("done") || status.equals("todo")) {
+            this.status = status;   
+        
+        } else 
+        {
+            throw new Exception("Invalid status " + status);
+        }
+
+    }
+    public String task () {
+        return task;
+    }
+    public String name() {
+        return name;
+    }
+    public int min() {
+        return min;
+    } 
+    public String important() {
+        String s1 = "";
+        if (important) {
+            s1 = "Important";
+        } else {
+            s1 = "Not Important";
+        }
+        return s1;
+    }
+    public String urgent() {
+        String s2 = "";
+        if (urgent) {
+            s2 = "Urgent";
+        } else {
+            s2 = "Not Urgent";
+        }
+        return s2;
+    }
+    public String status() {
+        return status;
     }
     public String toString() {
-        if (task.equals("")) {
-            System.out.println("Title not provided");
-            throw new NullPointerException();
-        }
-        if (min < 0) {
-            System.out.println("Invalid timetoComplete "+ min);
-            throw new IllegalArgumentException();
-        }
-        String one = "";
-        String two = "";
-        if (urgent){
-            one = "Urgent";
+        String s2 = "";
+        String s1 = "";
+        if (urgent) {
+            s2 = "Urgent";
         } else {
-            one = "Not Urgent";
+            s2 = "Not Urgent";
         }
         if (important) {
-            two = "Important";
+            s1 = "Important";
         } else {
-            two = "Not Important";
+            s1 = "Not Important";
         }
-        if (task == "") {
-            System.out.println("Title not provided");
-        }
-        return (task+ ", " + name + ", " + min + ", " + two + ", " + one + ", " + status);
-
+        String s = task + ", " + name + ", " + min + ", " + s1 + ", " + s2 + ", " + status;
+        return s;
     }
-
 }
+
 class Todoist {
 
 }
