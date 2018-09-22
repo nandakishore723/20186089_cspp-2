@@ -67,7 +67,7 @@ class Task {
     public String tostring() {
         String s = "";
         s = s + title + " " + assignedTo + " " + timeToComplete + " "
-            + important + " " + geturgent() + " " + status;
+            + important + " " + urgent + " " + getstatus();
         return s;
     }
 }
