@@ -13,6 +13,8 @@ public final class Solution {
     /**.
      * Constructs the object.
      */
+    private static final int HUN = 100;
+
     private Solution() {
         /**.
          * { item_description }
@@ -37,12 +39,12 @@ public final class Solution {
             int[][] matrix = new int[k][k];
             for (int i = 0; i < k; i++) {
                 for (int j = 0; j < k; j++) {
-                    if(i == j) {
-                        matrix[i][j] = 100;
+                    if (i == j) {
+                        matrix[i][j] = HUN;
                     }
                     if (i < j) {
                         matrix[i][j] = pl.bagOfWords(pl.toString(
-                            listFiles[i]), pl.toString(listFiles[j]));
+                                                         listFiles[i]), pl.toString(listFiles[j]));
                     } else {
                         matrix[i][j] = matrix[j][i];
                     }
