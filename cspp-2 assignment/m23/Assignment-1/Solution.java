@@ -43,8 +43,8 @@ public final class Solution {
                         matrix[i][j] = HUN;
                     }
                     if (i < j) {
-                        matrix[i][j] = pl.bagOfWords(pl.toString
-                            (listFiles[i]), pl.toString(listFiles[j]));
+                        matrix[i][j] = pl.bagOfWords(pl.toString(
+                            listFiles[i]), pl.toString(listFiles[j]));
                     } else {
                         matrix[i][j] = matrix[j][i];
                     }
