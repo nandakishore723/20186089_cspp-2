@@ -15,6 +15,9 @@ public final class Solution {
      */
     private static final int HUN = 100;
 
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         /**.
          * { item_description }
